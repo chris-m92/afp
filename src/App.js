@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+import {
+  CssBaseline,
+} from '@material-ui/core'
+
+import AFPHome from './AFPHome'
+import AFPData from './AFPData'
+
+const App = () => {
+
+  const [state, setState] = React.useState({
+    branch: 'air',
+    firstName: null,
+    lastName: null,
+    rank: 'Capt',
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div className='App'>
+      <CssBaseline />
+      {state.firstName === null || state.lastName === null ? 
+        <AFPData setState={setState} /> : 
+        <AFPHome state={state} setState={setState} />
+      }
+    </div >
+  )
 }
 
-export default App;
+export default App
