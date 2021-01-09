@@ -19,10 +19,10 @@ const AFPHome = props => {
         container
         direction='row'
       >
-        <Grid item xs={12} lg={10}>
+        <Grid item xs={12} lg={9} xl={10}>
           <AFPCalendar />
         </Grid>
-        <Grid item xs={12} lg={2}>
+        <Grid item xs={12} lg={3} xl={2}>
           <AFPSidebar />
         </Grid>
       </Grid>

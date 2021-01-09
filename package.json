@@ -1,6 +1,7 @@
 {
   "name": "afp",
-  "version": "0.1.0",
+  "homepage": "/afp",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@fontsource/roboto": "^4.1.0",

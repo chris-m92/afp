@@ -149,10 +149,12 @@ const AFPData = props => {
                 <MenuItem value='Maj'>Maj</MenuItem>
                 <MenuItem value='LtCol'>LtCol</MenuItem>
                 <MenuItem value='Col'>Col</MenuItem>
-                <MenuItem value='Brig. Gen.'>Brig. Gen.</MenuItem>
-                <MenuItem value='Maj. Gen.'>Maj. Gen.</MenuItem>
-                <MenuItem value='Lt. Gen.'>Lt. Gen.</MenuItem>
-                <MenuItem value='Gen.'>Gen.</MenuItem>
+                <MenuItem value='Brig. Gen'>Brig. Gen.</MenuItem>
+                <MenuItem value='Maj. Gen'>Maj. Gen.</MenuItem>
+                <MenuItem value='Lt. Gen'>Lt. Gen.</MenuItem>
+                <MenuItem value='Gen'>Gen.</MenuItem>
+                <MenuItem value='Civ'>Civ.</MenuItem>
+                <MenuItem value='Ctr'>Ctr.</MenuItem>
               </Select>
             </FormControl>
             <TextField
